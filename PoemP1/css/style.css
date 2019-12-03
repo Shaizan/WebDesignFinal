@@ -1,0 +1,101 @@
+*{
+box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+html, body{
+	min-height: 100vh; 
+ 
+}
+
+
+/*Elements to animate*/
+
+.initialbackground{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    animation-name: tempbackground;
+    animation-duration:7s;
+    animation-fill-mode: forwards;
+}
+
+.background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    opacity: 0;
+    animation-name: backgroundLoadIn;
+    animation-duration:10s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+svg{
+    position: fixed;
+    right: -11%;
+    bottom: -18%;
+}
+
+path{
+    stroke: white;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawBranch 12s linear alternate,pulse 7s 2 ;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+  
+}
+
+
+/*Keyframes*/
+@keyframes drawBranch{
+    from{ 
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0px;
+        fill: green;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.85);
+    } 
+    70%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(0.85);
+    }   
+}
+
+@keyframes tempbackground {
+    from{   
+        opacity:1;
+    }
+    to{
+        display: none;
+        opacity:0 ; 
+    }
+}
+
+@keyframes backgroundLoadIn {
+    from{
+        opacity:0;       
+    }
+    to{
+        opacity:1;       
+    }
+}
+
+

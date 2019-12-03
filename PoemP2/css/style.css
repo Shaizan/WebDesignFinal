@@ -1,0 +1,67 @@
+*{
+box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+html, body{
+	min-height: 100vh; 
+ 
+}
+
+.background{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width : 100%;
+    min-height: 100%;
+    z-index:-1;
+}
+
+.lion1{
+    position:fixed;
+    animation-name: lion1LoadIn;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+.lion2{
+    position:fixed;
+    animation-name: lion2LoadIn;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lion1LoadIn {
+    from{  
+        bottom: -5%;
+        left: -5%;
+        max-width: 0%;
+        max-height: 0%;
+        
+    }
+    to{
+    bottom: 5%;
+    left: 5%;   
+    max-width: 45%;
+    max-height: 45%;
+    }
+}
+
+@keyframes lion2LoadIn {
+    from{  
+        bottom: -5%;
+        right: -5%;
+        max-width: 0%;
+        max-height: 0%;
+        
+
+    }
+    to{
+    bottom: 5%;
+    right: 5%;
+    max-width: 45%;
+    max-height: 45%;
+    }
+}

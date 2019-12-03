@@ -1,0 +1,2 @@
+Add an on click to start the videos
+Add a click the video to grow the leaf to move to the next

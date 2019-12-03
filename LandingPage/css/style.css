@@ -1,0 +1,67 @@
+*{
+box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+html, body{
+	min-height: 100vh; 
+ 
+}
+
+html{
+    background-image: url(../images/landing%20background.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: contain;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+    
+}
+
+
+.tree1{
+    left: -30%;
+    width: 75%;
+    position: fixed;
+    bottom: -4%;
+}
+
+
+.tree2{
+    right: -35%;
+    width: 75%;
+    position: fixed;
+    bottom: -2.5%;
+}
+
+
+.branch{
+    height: 10%;
+    width: 11%;
+    position: fixed;
+    bottom: 15%;
+    left:45%;
+}
+
+.author{
+    text-align: center; 
+}
+.title{
+    text-align: center; 
+}

@@ -1,0 +1,131 @@
+*{
+box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body{
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.background{
+     position: absolute; 
+  top: 0; 
+  left: 0; 
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+    
+    height: 100vh;
+    width: auto; 
+    z-index: -1;
+}
+
+.part1{
+    display:block;
+}
+.part2{
+    display:none;
+}
+.part3{
+    display:none;
+}
+
+#testing{
+    width: 100px;
+    height: 100px;
+}
+.arrowBg {
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  right: 0%; 
+  height: 100%;
+  width: 5%;
+  font-weight: bold;
+  font-size: 200px;
+  transition: 1.6s ease;
+}
+
+.arrowBg p{
+    color:transparent;
+    margin-top: 275%;
+    margin-left: -15%;
+    transition: 1.1s ease;
+}
+
+.arrowBg:hover {
+    color: lightgray;
+    border: solid;
+
+}
+
+.arrowBg p:hover{
+    color:whitesmoke;
+}
+
+svg{
+    position: fixed;
+    right: -8%;
+    bottom: -14%;
+}
+
+path{
+    stroke: white;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawBranch 9s linear alternate,pulse 7s 2 ;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  
+}
+
+
+/*Keyframes*/
+@keyframes drawBranch{
+    from{ 
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0px;
+        fill: green;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.85);
+    } 
+    70%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(0.85);
+    }   
+}
+
+@keyframes backgroundLoad {
+    from{   
+        opacity:0;
+    }
+    to{
+        opacity:1 ; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
