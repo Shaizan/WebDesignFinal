@@ -46,7 +46,7 @@ path{
     stroke-dashoffset: 1000;
     animation: drawBranch 6s linear alternate,pulse 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 2.5s;
+    animation-delay: 0.5s;
   
 }
 

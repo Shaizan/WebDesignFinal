@@ -10,12 +10,123 @@ html, body{
  
 }
 
-.background{
+h1{
+    position: absolute; 
+    z-index: 2;
+}
+.background1{
     position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-    z-index:-1;
+    z-index:1;
+    animation-name: moveb1up;
+    animation-duration: 9s;
+      transition-timing-function: ease-out;
+     animation-fill-mode: forwards;
 }
 
+.background2{
+  right: 0;
+  top: 100%;
+    position: fixed;
+        bottom:0;
+         min-width: 100%;
+  min-height: 100%;
+    z-index:1;
+    animation-name: moveb2up;
+    animation-duration: 9s;
+     animation-fill-mode: forwards;
+    transition-timing-function: ease-in;
+}
+
+.line1{
+     animation-name: moveh1up;
+    animation-duration: 7s;
+     animation-fill-mode: forwards;
+    transition-timing-function: ease-in;
+}
+
+
+
+.line2{
+     animation-name: moveh2up;
+    animation-duration: 4s;
+     animation-fill-mode: forwards;
+    transition-timing-function: ease-in;
+}
+
+svg{
+    position: fixed;
+    z-index: 2;
+    right: -8%;
+    bottom: -12%;
+}
+
+path{
+    stroke: white;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawBranch 10s linear alternate,pulse 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.0s;
+    transition-timing-function: ease-in;
+  
+}
+
+@keyframes moveh1up{
+    from{
+        bottom: 20;
+    }
+    to{
+        bottom:100%;
+    }
+    
+}
+
+@keyframes moveh2up{
+    from{
+      
+        top:100%;
+         
+    }
+    to{
+        top:50%;
+        
+    }
+    
+}
+
+@keyframes moveb1up{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom:100%;
+    }
+    
+}
+
+@keyframes moveb2up{
+    from{
+      
+        top:100%;
+         
+    }
+    to{
+        top:0;
+        
+    }
+    
+}
+
+@keyframes drawBranch{
+    from{ 
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0px;
+        fill: green;
+    }
+}

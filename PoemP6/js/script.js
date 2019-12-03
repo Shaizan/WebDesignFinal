@@ -1,11 +1,33 @@
 window.onload = init; 
-
+var video = document.getElementById("backgroundvideo");
+var playing =false;
 function init(){
-console.log("hello!")	
+     video.onclick = testPlaying;
+     document.getElementById("branch").onclick = function() {transitionF()};
+}
 
-	var ball = document.getElementById("ball"); 
-	
-	TweenMax.fromTo(ball, 1, {x:500, y:150}, {y: 500, ease: Bounce.easeOut}); 
-	TweenMax.to(ball, 0.5, {scale:2, delay:3}); 
-	TweenMax.to(ball, 0.5, {borderRadius:"20%", rotation: 180,  delay:3}); 
+function testPlaying(){
+    if(playing){
+        pauseVideo();
+    }
+    else if (!playing){
+        playVideo();
+    }
+}
+function pauseVideo(){
+     for(var i = 1; i <=0; i-=0.2){
+         video.playbackRate = i;
+    }
+    playing = false;
+    video.pause();
+}
+
+function playVideo(){
+       video.play();
+ 
+    playing = true;
+}
+
+function transitionF() {
+   window.location.assign("../PoemP7/index.html");
 }
