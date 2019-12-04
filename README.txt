@@ -19,3 +19,5 @@ https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jq
 
 logo
 https://unsplash.com/photos/EwKXn5CapA4
+
+Note: The scaling started to be a bit weird, if you cannot see a branch on some of the screens zoom out a little, not sure why this is happening
