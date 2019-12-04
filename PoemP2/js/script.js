@@ -1,15 +1,11 @@
 window.onload = init; 
 
-function init(){
-    document.getElementById("lion1").onclick = function() {lion1Click()};
-    document.getElementById("lion2").onclick = function() {lion2Click()};
 
+function init(){
+document.getElementById("branch").onclick = function() {transitionF()};
 }
 
-function lion1Click() {
+function transitionF() {
    window.location.assign("../PoemP3/index.html");
 }
 
-function lion2Click() {
-    window.location.assign("../PoemP3/index.html");
-}

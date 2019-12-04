@@ -146,6 +146,9 @@ a:hover{
     font-size: 4vh;
 }
 
+.spanlogo:hover{
+  width:20vh;
+}
 /*Keyframes*/
 
 @keyframes loadline1{
