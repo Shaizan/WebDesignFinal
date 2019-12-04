@@ -77,6 +77,13 @@ path{
   
 }
 
+.spanlogo {
+  position: fixed;
+   left:0%;
+    top:0%;
+   width: 7.2vh;
+   margin-top:0px;
+}
 
 li{
     list-style-type: none;

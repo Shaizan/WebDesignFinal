@@ -5,3 +5,6 @@ https://www.sitepoint.com/delay-sleep-pause-wait/
 
 Navigation bar
 https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f
+
+logo
+https://unsplash.com/photos/EwKXn5CapA4

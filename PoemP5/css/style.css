@@ -82,6 +82,14 @@ path{
      animation-play-state: running;
 }
 
+.spanlogo {
+  position: fixed;
+   left:0%;
+    top:0%;
+   width: 8.2vh;
+   margin-top:0px;
+}
+
 li{
     list-style-type: none;
     margin: 0 2vw;
