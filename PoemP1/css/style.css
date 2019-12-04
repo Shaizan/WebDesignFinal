@@ -6,6 +6,7 @@ box-sizing: border-box;
 }
 
 html, body{
+    position: fixed;
 		width:100vw;
     height: 100vh;
     margin: 0;
@@ -84,9 +85,11 @@ h1{
 }
 
 svg{
-    position: fixed;
-    right: -11%;
-    bottom: -18%;
+     position: relative;
+    top:51vh;
+    left:75vw;
+    color: aliceblue;
+    font-size: 40px;
 }
 
 path{
