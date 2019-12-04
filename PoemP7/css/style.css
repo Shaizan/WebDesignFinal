@@ -9,6 +9,14 @@ html, body{
 	min-height: 100vh; 
 }
 
+h1{
+    position: relative;
+    text-align: center;
+    top:20vh;
+    color: aliceblue;
+    font-size: 60px;
+}
+
 .line1{
     color:white;
     opacity:1;
