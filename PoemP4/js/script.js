@@ -25,6 +25,8 @@ function transitionImage(){
     var part3 = document.getElementById("part3");
     var p3style = getComputedStyle(part3);
     
+    p1style.height ="90vh";
+    
     
   if (p1style.display == "block" && p2style.display == "none" && p3style.display == "none") {
     part1.style.display = "none";
