@@ -39,6 +39,7 @@ html, body{
     height: 100px;
 }
 .arrowBg {
+    z-index: 1;
   cursor: pointer;
   position: fixed;
   top: 0%;
@@ -51,6 +52,7 @@ html, body{
 }
 
 .arrowBg p{
+    z-index: 1;
     color:transparent;
     margin-top: 275%;
     margin-left: -15%;
