@@ -12,24 +12,11 @@ html, body{
 }
 
 html{
-    background-image: url(../images/landing%20background.jpg);
-  
-  /* Background image is centered vertically and horizontally at all times */
+  background-image: url(../images/landing%20background.jpg);
   background-position: center center;
-  
-  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
   background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
   background-size: contain;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
   background-color: #464646;
     
 }
@@ -40,6 +27,9 @@ html{
     width: 75%;
     position: fixed;
     bottom: -4%;
+    animation-name: loadInImages;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -48,6 +38,9 @@ html{
     width: 75%;
     position: fixed;
     bottom: -2.5%;
+    animation-name: loadInImages;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -57,6 +50,8 @@ html{
     position: fixed;
     bottom: 15%;
     left:45%;
+      animation: loadInBranch 20s infinite;
+    animation-fill-mode: forwards;
 }
 
 .author{
@@ -65,3 +60,62 @@ html{
 .title{
     text-align: center; 
 }
+
+h1{
+    position: relative;
+    text-align: center;
+    top:30vh;
+    color: aliceblue;
+    font-size: 70px;
+    color: green;
+    transform: scale(1);
+    animation: titleAnim 5s;
+}
+
+@keyframes titleAnim {
+    0% {
+        transform: scale(0.95);
+        top:15vh;
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1);
+        top:20vh;
+    }
+
+    100% {
+        transform: scale(0.95);
+        top:30vh;
+        opacity:1;
+    }
+}
+
+@keyframes loadInImages{
+    from{
+        opacity:0
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes loadInBranch{
+    0% {
+        opacity: 0;
+        transform: scale(0.65);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
