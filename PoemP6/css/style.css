@@ -6,14 +6,65 @@ box-sizing: border-box;
 }
 
 html, body{
+    position: fixed;
 	min-height: 100vh; 
  
 }
 
 h1{
-    position: absolute; 
+    position: relative;
+    text-align: center;
+    top:30vh;
+    color: aliceblue;
+    font-size: 60px;
     z-index: 2;
 }
+
+@keyframes loadline1{
+    from{
+        opacity:1;
+        top:30vh;
+        font-size: 60px;
+    }
+    to{
+        opacity: 0;
+        top:60vh;
+        font-size: 70px;
+    }
+}
+
+
+.part1 .line1{
+     animation-name: loadline1;
+    animation-duration: 8s;
+    transition-timing-function: ease-in;
+    opacity:1;
+    animation-fill-mode: forwards;
+}
+
+.part2 .line2{
+     animation-name: loadline2;
+    animation-duration: 6s;
+    transition-timing-function: ease-in;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadline2{
+    from{
+        opacity:0;
+        top:30vh;
+        font-size: 60px;
+    }
+    to{
+        opacity: 1;
+         top:60vh;
+        font-size: 90px;
+        color: deepskyblue;
+    }
+}
+
+
 .background1{
     position: fixed;
   right: 0;
@@ -58,10 +109,11 @@ h1{
 }
 
 svg{
-    position: fixed;
+    position: relative;
+    top:51vh;
+    left:75vw;
     z-index: 2;
-    right: -8%;
-    bottom: -12%;
+    
 }
 
 path{
@@ -171,6 +223,6 @@ a:hover{
     }
     to{
         stroke-dashoffset: 0px;
-        fill: green;
+        fill: red;
     }
 }

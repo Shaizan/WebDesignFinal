@@ -7,14 +7,37 @@ box-sizing: border-box;
 }
 
 html, body{
+    position: fixed;
 	width:100vw;
     height: 100vh;
     margin: 0;
 }
 h1{
-    position:absolute;
+    position: relative;
+    text-align: center;
+    top:30vh;
+    color: black;
+    font-size: 40px;
     z-index: 3;
 }
+
+.part1 .line1{
+    animation-name: loadline1;
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+
+.part2 .line2{
+    animation-name: loadline1;
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    opacity:0;
+    animation-fill-mode: forwards;
+    left:20vh
+}
+
 
 .part1{
     display:block;
@@ -32,10 +55,12 @@ h1{
 
 
 svg{
-    position: fixed;
+    position: relative;
+    top:51vh;
+    left:70vw;
+    color: aliceblue;
+    font-size: 40px;
     z-index: 2;
-    right: -8%;
-    bottom: -9%;
 }
 
 path{
@@ -53,15 +78,13 @@ path{
   cursor: pointer;
  position: relative;
     top: 90%;
-    left: 45%;
+    left: 87vh;
   z-index: 3;
   height: 10vh;
   width: 10vh;
   font-weight: bold;
-  font-size: 100px;
-  transition: 1.6s ease;
-   
-    transform: rotate(90deg);
+  font-size: 120px;
+
 }
 
 .arrowBg p{
@@ -75,7 +98,8 @@ path{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
-   
+     transition: 1.6s ease;
+    transform: rotate(90deg);
 }
 
 .arrowBg p:hover{
@@ -130,9 +154,40 @@ a:hover{
 /*Keyframes*/
 @keyframes moveArrow{
     to{
-        transform: translateX(80vh);
+        transform: translateY(80vh);
     }
 }
+
+@keyframes loadline1{
+    from{
+        opacity:0;
+        top:20vh;
+        font-size: 40px;
+        color:black;
+    }
+    to{
+        opacity: 1;
+        top:60vh;
+        font-size: 60px;
+        color: aqua;
+    }
+}
+
+@keyframes loadline2{
+    from{
+        opacity:0;
+        top:20vh;
+        font-size: 40px;
+        color:black;
+    }
+    to{
+        opacity: 1;
+        top:60vh;
+        font-size: 60px;
+        color: aqua;
+    }
+}
+
 
 @keyframes drawBranch{
     from{ 
@@ -140,7 +195,7 @@ a:hover{
     }
     to{
         stroke-dashoffset: 0px;
-        fill: green;
+        fill: white;
     }
 }
 
