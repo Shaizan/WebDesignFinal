@@ -19,18 +19,35 @@ function testPlaying(){
 }
 
 function pauseVideo(){
-     for(var i = 1; i <=0; i-=0.2){
-         video.playbackRate = i;
-    }
+       video.playbackRate = 0.5;
+ 
+         sleep(3000);
+    video.playbackRate = 0;
+       video.pause();
+ 
     playing = false;
-    video.pause();
+    
 }
 
 function playVideo(){
+     
+         video.playbackRate = 0.5;
+     video.play();
+         sleep(2000);
+    video.playbackRate = 1.0;
        video.play();
  
     playing = true;
 }
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
 
 function transitionImage(){
     var part1 = document.getElementById("part1");
