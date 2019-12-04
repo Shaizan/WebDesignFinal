@@ -6,14 +6,57 @@ box-sizing: border-box;
 }
 
 html, body{
+    position: fixed;
 	width:100vw;
     height: 100vh;
     margin: 0;
 }
 
 h1{
-    position:fixed;
-    z-index: -1;
+     position: relative;
+    text-align: center;
+    top:15vh;
+    left:35vh;
+    color: red;
+    font-size: 40px;
+}
+
+.line1{
+    animation-name: loadline1;
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.line2{
+    font-size: 40px;
+    animation-name: loadline2;
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes loadline1{
+    from{
+        font-size: 40px;
+        left:25vh;
+    }
+    to{
+        font-size: 70px;
+        left:0vh;
+    }
+}
+
+@keyframes loadline2{
+    from{
+        font-size: 40px;
+        left:25vh;
+    }
+    to{
+        font-size: 70px;
+        left:15vh;
+    }
 }
 
 .background{

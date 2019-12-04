@@ -7,6 +7,7 @@ box-sizing: border-box;
 }
 
 html, body{
+    position: fixed;
 	width:100vw;
     height: 100vh;
     margin: 0;
@@ -16,6 +17,75 @@ html, body{
     z-index: -1;
 }
 
+.part1 h1{
+    position: relative;
+    text-align: center;
+    top:10vh;
+    color: aliceblue;
+    font-size: 40px;
+        font-size: 70px;
+        animation-name: loadline1;
+    animation-duration: 7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.part2 h1{
+    position: relative;
+    text-align: center;
+    top:10vh;
+    left:75vh;
+    color: black;
+    font-size: 70px;
+        font-size: 70px;
+        animation-name: loadline3;
+    animation-duration: 7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.part3 h1{
+    position: relative;
+    text-align: center;
+    top:10vh;
+    right:10vh;
+    color: black;
+    font-size: 70px;
+        animation-name: loadline3;
+    animation-duration: 7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadline1{
+    from{
+       
+        top:10vh;
+        font-size: 70px;
+        color:black;
+    }
+    to{
+
+        top:20vh;
+        font-size: 75px;
+        color:white;
+    }
+}
+
+@keyframes loadline3{
+    from{
+        right:10vh;
+        top:10vh;
+        font-size: 70px;
+        color:black;
+    }
+    to{
+         right:70vh;
+        top:20vh;
+        font-size: 90px;
+        color:red;
+    }
+}
 .part1{
     display:block;
 }
@@ -68,7 +138,7 @@ svg{
 }
 
 path{
-    stroke: white;
+    stroke: red;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: drawBranch 9s linear alternate,pulse 7s 2 ;
@@ -129,7 +199,7 @@ a:hover{
     }
     to{
         stroke-dashoffset: 0px;
-        fill: green;
+        fill: red;
     }
 }
 
