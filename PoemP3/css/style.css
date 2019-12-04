@@ -2,8 +2,7 @@
 box-sizing: border-box; 
     margin: 0px;
     padding: 0px;
-    max-width: 100%;
-    max-height: %100%;
+    max-width:100%;
 }
 
 html, body{
@@ -14,6 +13,7 @@ html, body{
 
 h1{
     position:fixed;
+    z-index: -1;
 }
 
 .background{
@@ -39,7 +39,7 @@ path{
 li{
     list-style-type: none;
     margin: 0 2vw;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 a{
@@ -69,9 +69,7 @@ a:hover{
     font-size: 4vh;
 }
 
-button{
-    display:none;
-}
+
 /*Keyframes*/
 @keyframes drawBranch{
     from{ 
@@ -117,20 +115,5 @@ button{
   }
   a{
     display: block;
-  }
-}
-    
-    @media only screen and (max-width: 500px) {
-   ....
-  
-  button{
-    display: block;
-    padding: 2vw;
-    font-size: 3vh;
-    background-color: #AFE0FF;
-    border: none;
-    outline: none;   
-    cursor: pointer;
-    align-self: flex-start;
   }
 }

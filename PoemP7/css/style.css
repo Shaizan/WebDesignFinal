@@ -54,6 +54,42 @@ html, body{
     animation-timing-function: ease-in
 }
 
+li{
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 2.5vh;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color:green;
+    padding-left:  padding:2vw;
+    font-family: 'Indie Flower', cursive;
+    z-index: 1;
+}
+
+nav{
+    width:100vw;
+    background-color: floralwhite;
+    z-index: 1;
+   
+}
+
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+a:hover{
+  background-color: white;
+    font-size: 4vh;
+}
+
 @keyframes fadeVideo1{
     from{
         opacity: 1;
