@@ -36,7 +36,42 @@ path{
   
 }
 
+li{
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
 
+a{
+    text-decoration: none;
+    color:green;
+    padding-left:  padding:2vw;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+nav{
+    width:100vw;
+    background-color: floralwhite;
+   
+}
+
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+  background-color: white;
+    font-size: 4vh;
+}
+
+button{
+    display:none;
+}
 /*Keyframes*/
 @keyframes drawBranch{
     from{ 
@@ -71,3 +106,31 @@ path{
         background-size: cover;
     }
 
+@media only screen and (max-width: 500px) {
+
+  ul{
+    flex-direction: column;
+  }
+
+  li{
+    margin: 0;
+  }
+  a{
+    display: block;
+  }
+}
+    
+    @media only screen and (max-width: 500px) {
+   ....
+  
+  button{
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+    outline: none;   
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}

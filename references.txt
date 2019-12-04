@@ -2,3 +2,6 @@ Arow affect: https://codepen.io/HektorW/pen/eJMMaR
 
 sleep function for p5
 https://www.sitepoint.com/delay-sleep-pause-wait/
+
+Navigation bar
+https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f

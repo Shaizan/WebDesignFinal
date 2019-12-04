@@ -1,0 +1,94 @@
+*{
+box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+html, body{
+	min-height: 100vh; 
+}
+
+.line1{
+    color:white;
+    opacity:1;
+    animation-name: fadeline1;
+    animation-duration: 18s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.line2{
+    opacity:0;
+    animation-name: fadeline2;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.background1{ 
+    position: fixed;
+    opacity:1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    animation-name: fadeVideo1;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+} 
+
+.background2{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    animation-name: fadeVideo2;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in
+}
+
+@keyframes fadeVideo1{
+    from{
+        opacity: 1;
+       
+    }
+    to{
+       opacity:0;
+    }
+}
+
+@keyframes fadeVideo2{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+@keyframes fadeline1{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+@keyframes fadeline2{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+  
